@@ -5,11 +5,9 @@
 //
 //  Copyright (c) 2015 Allis Tauri
 
-using System;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
-using AT_Utils;
 
 namespace AT_Utils
 {
