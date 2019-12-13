@@ -90,7 +90,7 @@ namespace AT_Utils
                 other_converters.AddRange(from c in part.Modules.OfType<AnimatedConverterBase>()
                                           where c != this && c.AnimatorID == AnimatorID select c);
             //initialize Animator
-            animator = part.GetAnimator(AnimatorID);
+            animator = part.GetAnimator<MultiAnimator>(AnimatorID);
             //setup GUI fields
             Fields["Temperature"].guiActive       = HeatProduction > 0;
             Fields["CurrentEnergyDemand"].guiName = Title+" Uses";
